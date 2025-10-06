@@ -29,3 +29,5 @@
 
 ยกเลิก
 <img width="1072" height="404" alt="image" src="https://github.com/user-attachments/assets/5efc945b-63e0-4e24-8227-c23f91419a29" />
+
+รองรับการแสดงผลหลายขนาดหน้าจอ โดยใช้คลาส Tailwind เช่น sm:flex-row, sm:w-64, lg:grid-cols-3, max-w-5xl, px-4 sm:px-6 ฯลฯ ที่เจอในไฟล์อย่าง app/(protected)/layout.tsx, components/MemberDirectory.tsx, components/StatusCard.tsx ซึ่งช่วยจัดวางเลย์เอาต์ให้เหมาะกับมือถือ แท็บเล็ต และจอใหญ่โดยอัตโนมัติ.
