@@ -52,14 +52,14 @@ export default function MemberDirectory({ initialYear, years, initialMembers }: 
 
   return (
     <div className="space-y-6">
-      <div className="card flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="card flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-1">
-          <h2 className="text-lg font-semibold text-slate-800">สมาชิกชั้นปี {selectedYear}</h2>
-          <p className="text-xs text-slate-500">เลือกชั้นปีเพื่อดูรายชื่อเพื่อนร่วมรุ่น</p>
+          <h2 className="text-lg font-semibold text-cocoa-600">รายชื่อปี {selectedYear}</h2>
+          <p className="text-xs text-cocoa-400">เลือกปีการศึกษาหรือลองค้นหาด้วยคำสำคัญ</p>
         </div>
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <label className="flex items-center gap-2 text-sm text-slate-600">
-            ชั้นปี
+        <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
+          <label className="flex items-center gap-2 text-sm text-cocoa-500">
+            ปีการศึกษา
             <select value={selectedYear} onChange={handleYearChange} className="min-w-[120px]">
               {years.map((year) => (
                 <option key={year} value={year}>
@@ -70,7 +70,7 @@ export default function MemberDirectory({ initialYear, years, initialMembers }: 
           </label>
           <input
             type="search"
-            placeholder="ค้นหาด้วยชื่อหรืออีเมล"
+            placeholder="ค้นหาชื่อ อีเมล หรือรหัสนักศึกษา"
             value={keyword}
             onChange={(event) => setKeyword(event.target.value)}
             className="w-full sm:w-64"
@@ -79,15 +79,15 @@ export default function MemberDirectory({ initialYear, years, initialMembers }: 
       </div>
       {error && <p className="text-sm text-red-600">{error}</p>}
       {loading ? (
-        <p className="text-sm text-slate-500">กำลังโหลดรายชื่อ...</p>
+        <p className="text-sm text-cocoa-400">กำลังโหลดข้อมูล...</p>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filteredMembers.map((member) => (
             <MemberCard key={member.id} member={member} />
           ))}
           {!filteredMembers.length && (
-            <p className="col-span-full text-center text-sm text-slate-400">
-              ไม่พบข้อมูลสมาชิกที่ค้นหา
+            <p className="col-span-full rounded-2xl border border-dashed border-sand-300 bg-white/70 py-8 text-center text-sm text-cocoa-300">
+              ไม่พบข้อมูลที่ตรงกับการค้นหา
             </p>
           )}
         </div>

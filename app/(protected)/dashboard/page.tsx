@@ -1,4 +1,4 @@
-﻿import { cookies } from 'next/headers';
+import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import DashboardContent from '../../../components/DashboardContent';
 import {
@@ -39,9 +39,10 @@ export default async function DashboardPage() {
 
   return (
     <section className="space-y-6">
-      <div>
-        <h2 className="text-xl font-semibold text-slate-800">สถานะล่าสุด</h2>
-        <p className="text-sm text-slate-500">อัปเดตข่าวสาร แลกเปลี่ยนความคิดเห็นกับเพื่อนร่วมชั้น</p>
+      <div className="max-w-2xl space-y-2">
+        <p className="text-xs uppercase tracking-[0.3em] text-primary-400">Dashboard</p>
+        <h2 className="text-xl font-semibold text-cocoa-600">ฟีดอัปเดตจากเพื่อน ๆ</h2>
+        <p className="text-sm text-cocoa-400">ดูการแชร์สถานะล่าสุดและร่วมพูดคุยกับเพื่อนจากทุกชั้นปี</p>
       </div>
       <DashboardContent initialStatuses={statuses} />
     </section>

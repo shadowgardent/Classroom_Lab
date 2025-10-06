@@ -53,10 +53,10 @@ export default function StatusComposer({ onCreated }: StatusComposerProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="card p-6 space-y-4">
-      <div>
-        <label htmlFor="status" className="sr-only">
-          ข้อความสถานะ
+    <form onSubmit={handleSubmit} className="card space-y-4 p-6">
+      <div className="space-y-2">
+        <label htmlFor="status" className="text-sm font-medium text-cocoa-500">
+          แชร์สิ่งที่กำลังเกิดขึ้นกับคุณ
         </label>
         <textarea
           id="status"
@@ -64,8 +64,8 @@ export default function StatusComposer({ onCreated }: StatusComposerProps) {
           rows={3}
           value={body}
           onChange={(event) => setBody(event.target.value)}
-          placeholder="แบ่งปันสิ่งที่เกิดขึ้น..."
-          className="w-full"
+          placeholder="เล่าเรื่องราวหรืออัปเดตความคืบหน้า..."
+          className="w-full resize-none bg-transparent text-sm"
         />
       </div>
       {error && <p className="text-sm text-red-600">{error}</p>}

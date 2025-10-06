@@ -1,8 +1,8 @@
-﻿"use client";
+'use client';
 
-import { useTransition } from "react";
-import { useRouter } from "next/navigation";
-import { useAuth } from "../contexts/AuthContext";
+import { useTransition } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function LogoutButton() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function LogoutButton() {
   const handleClick = () => {
     startTransition(async () => {
       await logout();
-      router.push("/login");
+      router.push('/login');
       router.refresh();
     });
   };
@@ -21,10 +21,10 @@ export default function LogoutButton() {
     <button
       type="button"
       onClick={handleClick}
-      className="primary"
+      className="ghost px-4 py-2 text-cocoa-500 hover:text-primary-600"
       disabled={pending}
     >
-      {pending ? "กำลังออกจากระบบ..." : "ออกจากระบบ"}
+      {pending ? 'ออกจากระบบ...' : 'ออกจากระบบ'}
     </button>
   );
 }

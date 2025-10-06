@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import StatusCard from './StatusCard';
 import type { StatusItem } from '../types';
@@ -12,8 +12,8 @@ interface StatusFeedProps {
 export default function StatusFeed({ statuses, onToggleLike, onCreateComment }: StatusFeedProps) {
   if (!statuses.length) {
     return (
-      <div className="card p-6 text-center text-sm text-slate-500">
-        ยังไม่มีสถานะ ลองโพสต์สิ่งแรกกันเลย!
+      <div className="card p-6 text-center text-sm text-cocoa-400">
+        ยังไม่มีการอัปเดต ลองเป็นคนแรกที่แชร์เรื่องราวของคุณ!
       </div>
     );
   }

@@ -27,9 +27,10 @@ export default async function MembersPage() {
 
   return (
     <section className="space-y-6">
-      <div>
-        <h2 className="text-xl font-semibold text-slate-800">สมาชิกในชั้นปี</h2>
-        <p className="text-sm text-slate-500">สำรวจรายชื่อเพื่อนร่วมชั้นตามปีที่เข้าศึกษา</p>
+      <div className="max-w-2xl space-y-2">
+        <p className="text-xs uppercase tracking-[0.3em] text-primary-400">Directory</p>
+        <h2 className="text-xl font-semibold text-cocoa-600">รายชื่อเพื่อนร่วมรุ่น</h2>
+        <p className="text-sm text-cocoa-400">ค้นหาข้อมูลเพื่อน ๆ ตามปีการศึกษา อีเมล หรือรหัสนักศึกษา</p>
       </div>
       <MemberDirectory initialYear={defaultYear} years={years} initialMembers={members} />
     </section>
