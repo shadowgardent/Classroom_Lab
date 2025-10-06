@@ -2,8 +2,15 @@
 
 <img width="1052" height="725" alt="image" src="https://github.com/user-attachments/assets/4e394254-a176-4cb1-bd7c-79ceee4916b7" />
 
-2.ฟังชั่นดูสมาชิกในชั้นปี ตามปีที่เข้าศึกษา
+หน้าdashboard
+
 <img width="1913" height="985" alt="image" src="https://github.com/user-attachments/assets/200a8642-31f5-40d6-bdd6-10de35d05fb8" />
+
+2.ฟังชั่นดูสมาชิกในชั้นปี ตามปีที่เข้าศึกษา
+<img width="1914" height="770" alt="image" src="https://github.com/user-attachments/assets/05c3aee6-fc09-4eb1-8df5-507e30de8af1" />
+
+เลือกปี2023
+<img width="1226" height="902" alt="image" src="https://github.com/user-attachments/assets/a653165d-f3e4-4c23-b281-42590062fa9b" />
 
 3.ฟังก์ชั่นโพสต์สถานะ
 ตั้งโพสต์
