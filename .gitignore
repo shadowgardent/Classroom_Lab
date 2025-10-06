@@ -1,0 +1,6 @@
+# Node.js / Next.js
+node_modules/
+.next/
+dist/
+build/
+.env
